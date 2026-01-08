@@ -25,9 +25,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seatunnel?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    url:  jdbc:mysql://127.0.0.1:3306/seatunnel?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
     username: root
-    password: 123456
+    password: rootpassword
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -49,7 +49,7 @@ spring:
 jwt:
   expireTime: 86400
   # please add key when deploy
-  secretKey:
+  secretKey: https://github.com/apache/seatunnel
   algorithm: HS256
 
 seatunnel-web:

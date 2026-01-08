@@ -274,6 +274,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 -- ----------------------------
 -- Workspace related tables
 -- ----------------------------
+DROP TABLE IF EXISTS `workspace`;
 CREATE TABLE `workspace`  (
                          `id` bigint(20) NOT NULL AUTO_INCREMENT,
                          `workspace_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,

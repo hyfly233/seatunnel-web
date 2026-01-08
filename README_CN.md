@@ -80,6 +80,7 @@ sh build.sh code
 3. 复制 `apache-seatunnel-2.3.11/connectors/plugin-mapping.properties` 文件 到 `seatunnel-web/seatunnel-server/seatunnel-app/src/main/resources` 目录.
 4. 运行 `seatunnel-server/seatunnel-app/src/main/java/org/apache/seatunnel/app/SeatunnelApplication.java` 如果没有报错，说明seatunnel web后端服务启动成功。注意，你必须设置 `-DSEATUNNEL_HOME=${your_seatunnel_install_path}` 像这样:
 
+![ima.png](docs/images/idea_vm_options.png)
 ![img.png](docs/images/idea_st_home.png)
 
 由于数据源插件是动态加载的，所以需要设置相关的环境变量:
